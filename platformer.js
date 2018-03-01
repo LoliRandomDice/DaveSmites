@@ -85,7 +85,11 @@
     switch(key) {
       case KEY.LEFT:  player.left  = down; ev.preventDefault(); return false;
       case KEY.RIGHT: player.right = down; ev.preventDefault(); return false;
-      case KEY.SPACE: player.jump  = down; ev.preventDefault(); return false;
+      case KEY.UP: player.jump  = down; ev.preventDefault(); return false;
+	  case KEY.A:  player.left  = down; ev.preventDefault(); return false;
+      case KEY.D: player.right = down; ev.preventDefault(); return false;
+      case KEY.W: player.jump  = down; ev.preventDefault(); return false;
+	  case KEY.SPACE: player.jump  = down; ev.preventDefault(); return false;
     }
   }
   
